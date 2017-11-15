@@ -3,8 +3,9 @@
 	<head lang="en-us">
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	    <link href="/css/style.css" rel="stylesheet">
 	    <script src="js/jquery.js"></script>
 	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 		  <script src="https://use.fontawesome.com/6a6867f07c.js"></script>
@@ -12,27 +13,49 @@
 	<body>
 	    <header>
             <nav class="navbar-default">
-              <div class="container-fluid">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
-                  <a class="navbar-brand" href="#">Brand</a>
+              <div class="container-fluid container-menu-top">
+                  <a class="navbar-brand" href="#">
+                    <img src="/imgs/logo-merlins.png" class="img-responsive" alt="Merlin's potion logo">
+                  </a>
                   
-                  <form class="navbar-form pull-left">
+                  <div class="hidden-lg hidden-md btn-car-sm-xs">
+                      <a href="#" class="btn-car">
+                        <img src="/imgs/icon-car.png" class="img-responsive" alt="Responsive image">
+                        BAG: <span class="car-counter"> 1 </span>
+                      </a>
+                  </div>
+                  
+                  <form class="navbar-form hidden-lg hidden-md">
                     <div class="form-group">
-                      <input type="text" class="form-control search" placeholder=" &#xf002; Search" style="font-family: FontAwesome;">
+                      <input type="search" class="form-control search" placeholder=" &#xf002; Search our stock">
                     </div>
                   </form>
+                  
+                  <form class="navbar-form navbar-left hidden-sm hidden-xs">
+                    <div class="form-group">
+                      <input type="search" class="form-control search" placeholder=" &#xf002; Search our stock">
+                    </div>
+                  </form>
+                  
+                  <div class="nav navbar-nav navbar-right hidden-sm hidden-xs">
+                    <button type="button" class="btn btn-link car-btn"> BAG: <span class="car-counter"> 1 </span> </button>
+                  </div>
+                  
+                  <div class="nav navbar-nav navbar-right hidden-sm hidden-xs">
+                    <img src="/imgs/icon-car.png" class="img-responsive" alt="Responsive image">
+                  </div>
+                  
+                  <div class="nav navbar-nav navbar-right shipping-warn hidden-sm hidden-xs">
+                    <img src="/imgs/ship-warn.png" class="img-responsive" alt="Responsive image">
+                  </div>
+                  
               </div>
-              <div class="container-fluid">
+              <div class="container-fluid container-menu-top2 hidden-sm hidden-xs">
                   <ul class="nav navbar-nav">
                       <!--Potions-->
                       <li class="dropdown">
                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                            Potions 
+                            <i> Potions </i>
                             <span class="caret"></span>
                           </a>
                           <ul class="dropdown-menu">
@@ -48,7 +71,7 @@
                       <!--Ingridients-->
                       <li class="dropdown">
                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                            Ingridients 
+                            <i> Ingridients </i>
                             <span class="caret"></span>
                           </a>
                           <ul class="dropdown-menu">
@@ -64,7 +87,7 @@
                       <!--Books-->
                       <li class="dropdown">
                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                            Books 
+                            <i> Books </i>
                             <span class="caret"></span>
                           </a>
                           <ul class="dropdown-menu">
@@ -80,7 +103,7 @@
                       <!--Supplies-->
                       <li class="dropdown">
                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                            Supplies 
+                            <i> Supplies </i>
                             <span class="caret"></span>
                           </a>
                           <ul class="dropdown-menu">
@@ -96,7 +119,7 @@
                       <!--Charms-->
                       <li class="dropdown">
                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                            Potions 
+                            <i> Charms </i>
                             <span class="caret"></span>
                           </a>
                           <ul class="dropdown-menu">
@@ -110,36 +133,199 @@
                           </ul>
                       </li>
                       <!--Clearance-->
-                      <li class="dropdown">
-                          <a href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                            Clearance!
+                      <li class="btn-clearance">
+                          <a href="#" class="link-clearance">
+                            <i> Clearance! </i>
                           </a>
                       </li>
                   </ul>
-                  <div class="nav navbar-nav navbar-right">
-                    <button type="button" class="btn btn-default navbar-btn"> Sign in </button>
+                  <div class="nav navbar-nav navbar-right btn-sign-container">
+                    <a href="#" class="btn-sign"> <i> Sign in </i> </a>
                     or
-                    <button type="button" class="btn btn-default navbar-btn"> Sign up </button>
+                    <a href="#" class="btn-sign"> <i> Sign up </i> </a>
                   </div>
-                </div><!-- /.navbar-collapse -->
+                </div>
+                
+                <div class="container-fluid container-menu-top2 hidden-lg hidden-md">
+                  <ul class="nav navbar-nav">
+                      <!--Potions-->
+                      <li class="dropdown">
+                          <a href="#" role="button">
+                            <i> Potions </i>
+                          </a>
+                      </li>
+                      <!--Ingridients-->
+                      <li class="dropdown">
+                          <a href="#">
+                            <i> Ingridients </i>
+                          </a>
+                      </li>
+                      <!--Books-->
+                      <li class="dropdown">
+                          <a href="#">
+                            <i> Books </i>
+                          </a>
+                      </li>
+                      <!--Supplies-->
+                      <li class="dropdown">
+                          <a href="#">
+                            <i> Supplies </i>
+                          </a>
+                      </li>
+                      <!--Charms-->
+                      <li class="dropdown">
+                          <a href="#">
+                            <i> Charms </i>
+                          </a>
+                      </li>
+                      <!--Clearance-->
+                      <li class="btn-clearance">
+                          <a href="#" class="link-clearance">
+                            <i> Clearance! </i>
+                          </a>
+                      </li>
+                  </ul>
+                  <div class="nav navbar-nav navbar-right btn-sign-container">
+                    <a href="#" class="btn-sign"> <i> Sign in </i> </a>
+                    or
+                    <a href="#" class="btn-sign"> <i> Sign up </i> </a>
+                  </div>
+                </div>
               </div><!-- /.container-fluid -->
             </nav>
 	    </header>
 		<main class="main-content container-fluid">
+		  <div class="row">
+		    <h2 class="page-title col-lg-1 col-md-4 col-sm-6 col-xs-12 col-lg-offset-2"> Potions </h2>
+		  </div>
 			<div class="row">
-			    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-			         Item 1
+			    <div class="product col-lg-2 col-md-4 col-sm-6 col-xs-6 col-lg-offset-2">
+			         <img src="/imgs/products/aging-potion.png" class="img-responsive" alt="">
+			         <p class="product-details text-center">
+			           <span class="name">Aging Potion</span> - 
+			           <span class="price">$29,99</span>
+			         </p>
 			    </div>
-			    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-			         Item 12
+			    <div class="product col-lg-2 col-md-4 col-sm-6 col-xs-6 col-lg-offset-1">
+			         <img src="/imgs/products/bulgeye-potion.png" class="img-responsive" alt="">
+			         <p class="product-details text-center">
+			           <span class="name">Bugeye Potion</span> - 
+			           <span class="price">$29,99</span>
+			         </p>
 			    </div>
-			    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-			         Item 13
+			    <div class="product col-lg-2 col-md-4 col-sm-6 col-xs-6 col-lg-offset-1">
+			         <img src="/imgs/products/dragon-tonic.png" class="img-responsive" alt="">
+			         <p class="product-details text-center">
+			           <span class="name">Dragon Tonic</span> - 
+			           <span class="price">$29,99</span>
+			         </p>
+			    </div>
+			    <div class="product col-lg-2 col-md-4 col-sm-6 col-xs-6 col-lg-offset-2">
+			         <img src="/imgs/products/love-potion.png" class="img-responsive" alt="">
+			         <p class="product-details text-center">
+			           <span class="name">Love Potion</span> - 
+			           <span class="price">$29,99</span>
+			         </p>
+			    </div>
+			    <div class="product col-lg-2 col-md-4 col-sm-6 col-xs-6 col-lg-offset-1">
+			         <img src="/imgs/products/polyjuice-potion.png" class="img-responsive" alt="">
+			         <p class="product-details text-center">
+			           <span class="name">Polyjuice Potion</span> - 
+			           <span class="price">$29,99</span>
+			         </p>
+			    </div>
+			    <div class="product col-lg-2 col-md-4 col-sm-6 col-xs-6 col-lg-offset-1">
+			         <img src="/imgs/products/sleeping-draught.png" class="img-responsive" alt="">
+			         <p class="product-details text-center">
+			           <span class="name">Sleeping Draught</span> - 
+			           <span class="price">$29,99</span>
+			         </p>
 			    </div>
 			</div>
 		</main>
-		<footer>
-			
+		<footer class="footer-content container-fluid">
+      <div class="row">
+        <div class="col-lg-3 col-lg-offset-3">
+            <div class="footer-first-content">
+              <div class="row footer-menu hidden-sm hidden-xs">
+                <p class="col-lg-4">COMPANY RETURNS</p>
+                <p class="col-lg-4">CONTACT US CARRERS</p>
+                <p class="col-lg-4">SHIPPING</p>
+              </div>
+              <div class="row hidden-sm hidden-xs">
+                <div class="col-lg-2 col-md-1">
+                  <a href="#">
+                    <img src="/imgs/icons/fb.png" class="img-responsive" alt="facebook icon">
+                  </a>
+                </div>
+                <div class="col-lg-2 col-md-1">
+                  <a href="#">
+                    <img src="/imgs/icons/tw.png" class="img-responsive" alt="Twitter icon">
+                  </a>
+                </div>
+                <div class="col-lg-2 col-md-1">
+                  <a href="#">
+                    <img src="/imgs/icons/pt.png" class="img-responsive" alt="Pinterest icon">
+                  </a>
+                </div>
+                <div class="col-lg-2 col-md-1">
+                  <a href="#">
+                    <img src="/imgs/icons/tb.png" class="img-responsive" alt="Tumblr icon">
+                  </a>
+                </div>
+                <div class="col-lg-2 col-md-1">
+                  <a href="#">
+                    <img src="/imgs/icons/gg.png" class="img-responsive" alt="Google plus icon">
+                  </a>
+                </div>
+              </div>
+              <div class="row">
+                <p class="col-lg-12 copyright-text">
+                  &copy; 2015 Merlin's Potions. All Rights Reserved
+                </p>
+              </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="footer-second-content">
+            <p> Sign up for our Newsletter </p>
+            <p> Sign up for our newsletter & get get exclusive discounts! </p>
+            <form class="form-subscribe">
+              <div class="form-group">
+                <input type="email" class="form-control" name="email-newsletter" id="email-newsletter" placeholder="Enter your email">
+              </div>
+              <button type="button" class="btn btn-default">Enviar</button>
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-12 hidden-lg hidden-md">
+          <div class="col-sm-2 col-xs-2">
+            <a href="#">
+              <img src="/imgs/icons/fb.png" class="img-responsive" alt="facebook icon">
+            </a>
+          </div>
+          <div class="col-sm-2 col-xs-2">
+            <a href="#">
+              <img src="/imgs/icons/tw.png" class="img-responsive" alt="Twitter icon">
+            </a>
+          </div>
+          <div class="col-sm-2 col-xs-2">
+            <a href="#">
+              <img src="/imgs/icons/pt.png" class="img-responsive" alt="Pinterest icon">
+            </a>
+          </div>
+          <div class="col-sm-2 col-xs-2">
+            <a href="#">
+              <img src="/imgs/icons/tb.png" class="img-responsive" alt="Tumblr icon">
+            </a>
+          </div>
+          <div class="col-sm-2 col-xs-2">
+            <a href="#">
+              <img src="/imgs/icons/gg.png" class="img-responsive" alt="Google plus icon">
+            </a>
+          </div>
+        </div>
+      </div>
 		</footer>
 	</body>
 </html>

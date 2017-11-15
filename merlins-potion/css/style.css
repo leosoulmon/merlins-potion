@@ -1,0 +1,132 @@
+/*GENERAL*/
+
+html{
+    font-family: 'Oswald', sans-serif;
+}
+
+/*MENU*/
+.container-menu-top > div.shipping-warn{
+    margin-right: 35px;
+}
+
+.container-menu-top > form, .container-menu-top > div.nav{
+    margin-top:30px;
+}
+
+.car-counter{
+    color:red; 
+}
+
+.car-btn{
+    padding-top:15px;
+}
+
+.search{
+    font-family: FontAwesome;
+}
+
+.navbar-brand{
+    height:auto;
+}
+
+.navbar-default{
+    background-color: white;
+}
+
+.container-menu-top2{
+    background-color: #523468;
+}
+
+.container-menu-top2 > .nav > .dropdown > a, .container-menu-top2 > .nav > .dropdown > a:hover{
+    color:white;
+}
+
+.btn-clearance{
+    background-color: #422a53;
+    border-radius:5px;
+    color:white;
+    height: 40px;
+    margin-top: 6px;
+}
+
+.btn-clearance > .link-clearance{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:active {
+    color: white;
+}
+
+.btn-sign-container > a.btn-sign{
+    border:none;
+    text-decoration: none;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    line-height: 50px;
+    margin-left:15px;
+    margin-right:15px;
+}
+
+.btn-sign-container{
+    color: white;
+}
+
+.navbar-default > .container-menu-top > .btn-car-sm-xs{
+    margin-top:15px;    
+}
+.navbar-default > .container-menu-top > .btn-car-sm-xs > .btn-car{
+    text-decoration: none;
+    color:black;
+}
+
+/*MAIN CONTENT*/
+
+.page-title{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.main-content > div > .product > .product-details > .price{
+    color:#e65100;
+}
+
+/*FOOTER*/
+
+.form-subscribe > button{
+    background-color: #d73a1e;
+}
+
+.footer-content{
+    background-color:#e6e6e6;
+}
+
+.footer-menu{
+    color:#ef6c00;
+}
+
+.copyright-text{
+    font-size:1.2rem;
+    color:#666; 
+    margin-top: 30px;
+}
+
+.footer-first-content{
+    padding: 10px;
+    margin:10px;
+    font-size:1.6rem;   
+}
+
+.footer-first-content > .row{
+    margin-bottom: 20px;
+}
+
+.footer-second-content{
+    background-color: white;
+    color:#666;
+    border-radius:5px;
+    padding: 10px;
+    margin:10px;
+    *max-width: 380px
+}
